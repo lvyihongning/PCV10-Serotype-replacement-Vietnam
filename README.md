@@ -42,8 +42,6 @@ carriage when children can carry more than one serotype at a time.
 Prevalence ratios, marginal prevalence and convergence checks use `prevalence_ratios()`,
 `marginal_prevalence()`, `density_ratios()` and `check_fit()` throughout.
 
-Scripts write their outputs to `results/<folder>/` and figures to `<folder>/figures/`
-(created when the scripts run; not tracked in git).
 
 ## Requirements
 
