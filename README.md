@@ -23,29 +23,7 @@ All models were fitted with the R package
 **[pneumoalloc](https://github.com/lvyihongning/pneumoalloc)**
 ([version 0.1.0](https://github.com/lvyihongning/pneumoalloc/releases/tag/v0.1.0)), which we
 developed for this analysis. pneumoalloc implements a unified Bayesian framework for serotype-specific
-carriage when children can carry more than one serotype at a time. It fits one joint model
-of overall carriage (logistic), serotype composition among carriers (fractional
-multinomial logit) and density among carriers (lognormal with multiplicity). Models are
-written in Stan and fitted through [cmdstanr](https://mc-stan.org/cmdstanr/).
-
-In this framework, the four approaches to multiple serotype carriage differ **only** in how
-a carriage episode is allocated among its serotypes. They are therefore compared on the same
-population, design and priors:
-
-| Approach | pneumoalloc | Allocation of a carriage episode | Carrier weight |
-|---|---|---|---|
-| i | `dominant` | all to the dominant serotype | 1 |
-| ii | `equal` | 1/n to each of the n serotypes | 1 |
-| iii | `abundance` | relative abundance of each serotype | 1 |
-| iv | `density` | relative abundance of each serotype | Θᵢ / Θ̄ₜ |
-
-Θᵢ is the total density of child i and Θ̄ₜ the mean total density among carriers in survey
-round t. All estimates are standardised over the study population. Prevalence ratios are
-computed within each posterior draw, relative to October 2016.
-
-The scripts in this repository prepare the data, call pneumoalloc, and produce the
-manuscript's tables and figures. The model code itself is in the package (see its README,
-vignette and tutorial for documentation).
+carriage when children can carry more than one serotype at a time. 
 
 ## Repository structure
 
