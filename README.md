@@ -58,6 +58,7 @@ vignette and tutorial for documentation).
 | `04_relative_abundance/` | Relative abundance of serotypes in multiple carriage; dominant vs subdominant serotypes | — (stand-alone Stan model `0_RA_20261015.stan`) |
 | `05_density/` | Carriage density (total, VT, NVT) among carriers | `fit_density()` |
 | `06_sensitivity/` | Sensitivity analyses: `6A/` (from the primary fits), `presence_based/`, `arm/`, `simulations/` | `fit_presence()`, `fit_carriage_states()`, `fit_carriage()` |
+| `07_plots/` | Main and supplementary figures and tables (Figures 1–4, S3, S5–S8), from the results of the folders above | — |
 
 
 Prevalence ratios, marginal prevalence and convergence checks use `prevalence_ratios()`,
