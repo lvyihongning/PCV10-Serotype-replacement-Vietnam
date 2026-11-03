@@ -20,8 +20,9 @@ Vietnam (seven survey rounds, October 2016 to July 2022), before and after PCV10
 ## Models: the pneumoalloc package
 
 All models were fitted with the R package
-**[pneumoalloc](https://github.com/lvyihongning/pneumoalloc)** (version 0.1.0 (https://github.com/lvyihongning/pneumoalloc/commit/6323b65)), which we developed
-for this analysis. pneumoalloc implements a unified Bayesian framework for serotype-specific
+**[pneumoalloc](https://github.com/lvyihongning/pneumoalloc)**
+([version 0.1.0](https://github.com/lvyihongning/pneumoalloc/releases/tag/v0.1.0)), which we
+developed for this analysis. pneumoalloc implements a unified Bayesian framework for serotype-specific
 carriage when children can carry more than one serotype at a time. It fits one joint model
 of overall carriage (logistic), serotype composition among carriers (fractional
 multinomial logit) and density among carriers (lognormal with multiplicity). Models are
@@ -78,8 +79,8 @@ Scripts write their outputs to `results/<folder>/` and figures to `<folder>/figu
 - pneumoalloc, at the version used for the manuscript:
 
   ```r
-# install.packages("remotes")
-
+  # install.packages("remotes")
+  remotes::install_github("lvyihongning/pneumoalloc@v0.1.0")
   ```
 
   The Stan models are compiled on first use and cached.
@@ -88,7 +89,11 @@ Scripts write their outputs to `results/<folder>/` and figures to `<folder>/figu
 ## Citation
 
 If you use this code, please cite the manuscript (citation to be added on publication). If
-you use the models, please also cite the pneumoalloc package.
+you use the models, please also cite the pneumoalloc package:
+
+> Dong K (2026). *pneumoalloc: Serotype-Specific Pneumococcal Carriage with Multiple Serotype
+> Carriage: A Unified Bayesian Framework*. R package version 0.1.0.
+> https://github.com/lvyihongning/pneumoalloc
 
 ## License
 
