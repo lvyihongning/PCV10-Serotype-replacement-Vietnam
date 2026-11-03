@@ -47,3 +47,26 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# ---- Project: never commit data, outputs or manuscripts ----
+data/
+results/
+logs/
+manuscript/
+*.qs
+*.rds
+*.RDS
+*.csv
+*.xlsx
+*.xls
+*.docx
+*.pdf
+*.tiff
+*.tif
+*.png
+*.pptx
+# Compiled Stan models and package tarballs
+04_relative_abundance/0_RA_20261015
+*.exe
+cluster/*.tar.gz
+.DS_Store
