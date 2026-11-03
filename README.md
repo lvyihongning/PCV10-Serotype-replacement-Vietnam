@@ -57,8 +57,7 @@ vignette and tutorial for documentation).
 | `04_relative_abundance/` | Relative abundance of serotypes in multiple carriage; dominant vs subdominant serotypes | — (stand-alone Stan model `0_RA_20261015.stan`) |
 | `05_density/` | Carriage density (total, VT, NVT) among carriers | `fit_density()` |
 | `06_sensitivity/` | Sensitivity analyses: `6A/` (from the primary fits), `presence_based/`, `arm/`, `simulations/` | `fit_presence()`, `fit_carriage_states()`, `fit_carriage()` |
-| `07_plots/` | Main and supplementary figures and tables | — |
-| `cluster/` | Slurm job scripts for running the approach i–iv fits on an HPC cluster | — |
+
 
 Prevalence ratios, marginal prevalence and convergence checks use `prevalence_ratios()`,
 `marginal_prevalence()`, `density_ratios()` and `check_fit()` throughout.
@@ -79,8 +78,8 @@ Scripts write their outputs to `results/<folder>/` and figures to `<folder>/figu
 - pneumoalloc, at the version used for the manuscript:
 
   ```r
-  # install.packages("remotes")
-  remotes::install_github("lvyihongning/pneumoalloc@6323b65")
+# install.packages("remotes")
+
   ```
 
   The Stan models are compiled on first use and cached.
