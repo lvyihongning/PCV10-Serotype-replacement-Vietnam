@@ -6,23 +6,21 @@ Analysis code for the manuscript
 > pneumococcal density following PCV10 introduction in Nha Trang, Vietnam**
 
 The study uses repeated cross-sectional carriage surveys of children in Nha Trang,
-Vietnam (seven survey rounds, October 2016 to July 2022), before and after the
-introduction of the 10-valent pneumococcal conjugate vaccine (PCV10). The analyses estimate:
+Vietnam (seven survey rounds, October 2016 to July 2022), before and after PCV10 introduction. The analyses estimate:
 
-- the prevalence of pneumococcal carriage and of multiple serotype carriage (co-colonisation),
+- the prevalence of pneumococcal carriage and of multiple serotype carriage,
   and their prevalence ratios relative to October 2016;
-- the prevalence of PCV10 (vaccine-type, VT) and non-PCV10 (NVT) serotypes, and of individual
-  serotypes, under four approaches to multiple serotype carriage;
-- the serotype composition of multiple carriage;
-- pneumococcal carriage density (qPCR) of VT and NVT serotypes;
-- sensitivity analyses (serotype 6A as vaccine-associated, presence-based counting,
-  comparison of trial arms, and simulation studies).
+- the prevalence of PCV10 (VT) and non-PCV10 (NVT) serotypes, and of individual
+  serotypes, under four approaches to multiple serotype carriage in a unified Bayesian framework;
+- the serotype composition of multiple serotype carriage;
+- pneumococcal carriage density of VT and NVT serotypes;
+- sensitivity analyses (serotype 6A as vaccine-associated, presence-based approach,
+  comparison of trial arms, and high-carriage and high multiple serotype carriage simulations).
 
 ## Models: the pneumoalloc package
 
 All models were fitted with the R package
-**[pneumoalloc](https://github.com/lvyihongning/pneumoalloc)** (version 0.1.0, commit
-[`6323b65`](https://github.com/lvyihongning/pneumoalloc/commit/6323b65)), which we developed
+**[pneumoalloc](https://github.com/lvyihongning/pneumoalloc)** (version 0.1.0 (https://github.com/lvyihongning/pneumoalloc/commit/6323b65)), which we developed
 for this analysis. pneumoalloc implements a unified Bayesian framework for serotype-specific
 carriage when children can carry more than one serotype at a time. It fits one joint model
 of overall carriage (logistic), serotype composition among carriers (fractional
