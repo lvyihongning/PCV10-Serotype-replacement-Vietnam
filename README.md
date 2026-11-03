@@ -2,8 +2,8 @@
 
 Analysis code for the manuscript
 
-> **Changes in serotype-specific pneumococcal carriage, multiple serotype carriage, and
-> pneumococcal density following PCV10 introduction in Nha Trang, Vietnam**
+> **Changes in serotype-specific pneumococcal carriage, multiple serotype carriage,
+> and pneumococcal density following PCV10 introduction in Viet Nam: a secondary analysis of a cluster-randomised trial**
 
 The study uses repeated cross-sectional carriage surveys of children in Nha Trang,
 Vietnam (seven survey rounds, October 2016 to July 2022), before and after PCV10 introduction. The analyses estimate:
